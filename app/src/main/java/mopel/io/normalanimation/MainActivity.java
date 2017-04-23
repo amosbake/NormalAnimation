@@ -2,13 +2,12 @@ package mopel.io.normalanimation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import mopel.io.library.BaseAnimator;
-import mopel.io.library.BounceAnimator;
-import mopel.io.library.TadaAnimator;
+import mopel.io.library.HeadShakeAnimator;
 
 public class MainActivity extends AppCompatActivity {
   private ImageView target;
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     target = (ImageView) findViewById(R.id.animatorTarget);
-    animator = new BounceAnimator();
+    animator = new HeadShakeAnimator();
     animator.setStartDelay(500);
     animator.addAnimatorListener(new AnimatorListenerAdapter() {
        Animator animator;
