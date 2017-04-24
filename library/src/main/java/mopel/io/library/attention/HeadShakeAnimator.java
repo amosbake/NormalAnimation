@@ -1,9 +1,10 @@
-package mopel.io.library;
+package mopel.io.library.attention;
 
 import android.animation.Keyframe;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.view.View;
+import mopel.io.library.BaseAnimator;
 
 /**
  * Author: mopel

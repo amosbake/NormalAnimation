@@ -1,17 +1,17 @@
-package mopel.io.library;
+package mopel.io.library.attention;
 
 import android.animation.Keyframe;
-import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.view.View;
+import mopel.io.library.BaseAnimator;
 
 /**
  * Author: mopel
  * Date : 2017/4/23
  */
 
-public class BounceAnimator extends BaseAnimator{
+public class BounceAnimator extends BaseAnimator {
 
   @Override protected void prepare(final View target) {
     Keyframe kf_0 = Keyframe.ofFloat(0f, 0f);

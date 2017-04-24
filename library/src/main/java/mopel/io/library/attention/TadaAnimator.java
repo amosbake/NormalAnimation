@@ -1,7 +1,8 @@
-package mopel.io.library;
+package mopel.io.library.attention;
 
 import android.animation.ObjectAnimator;
 import android.view.View;
+import mopel.io.library.BaseAnimator;
 
 /**
  * Author: mopel
@@ -10,7 +11,7 @@ import android.view.View;
  *
  */
 
-public class TadaAnimator extends BaseAnimator{
+public class TadaAnimator extends BaseAnimator {
   @Override protected void prepare(View target) {
     getAnimator().playTogether(
         ObjectAnimator.ofFloat(target, "scaleX", 1, 0.9f, 0.9f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1),
