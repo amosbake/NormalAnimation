@@ -7,7 +7,7 @@ import mopel.io.library.BaseAnimator;
 /**
  * Author: mopel
  * Date : 2017/4/25
- * cssAnimation: https://github.com/daneden/animate.css/blob/master/source/zooming_entrances/zoomOut.css
+ * cssAnimation: https://github.com/daneden/animate.css/blob/master/source/zooming_exits/zoomOut.css
  */
 
 public class ZoomOutAnimator extends BaseAnimator {
