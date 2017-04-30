@@ -1,4 +1,4 @@
-package mopel.io.library.fade;
+package mopel.io.library.fade.in;
 
 import android.animation.ObjectAnimator;
 import android.view.View;
