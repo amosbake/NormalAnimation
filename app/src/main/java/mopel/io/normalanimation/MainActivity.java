@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import mopel.io.library.BaseAnimator;
-import mopel.io.library.zoom.out.ZoomOutAnimator;
+import mopel.io.library.flip.FlipOutYAnimator;
 
 public class MainActivity extends AppCompatActivity {
   private ImageView target;
@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     target = (ImageView) findViewById(R.id.animatorTarget);
-    animator = new ZoomOutAnimator();
+    animator = new FlipOutYAnimator();
     animator.setStartDelay(500);
+    animator.setDuration(2000);
     animator.addAnimatorListener(new AnimatorListenerAdapter() {
        Animator animator;
 
