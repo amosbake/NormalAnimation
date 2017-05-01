@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import mopel.io.library.BaseAnimator;
-import mopel.io.library.flip.FlipOutYAnimator;
+import mopel.io.library.rotate.RotateInUpRightAnimator;
 
 public class MainActivity extends AppCompatActivity {
   private ImageView target;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     target = (ImageView) findViewById(R.id.animatorTarget);
-    animator = new FlipOutYAnimator();
+    animator = new RotateInUpRightAnimator();
     animator.setStartDelay(500);
     animator.setDuration(2000);
     animator.addAnimatorListener(new AnimatorListenerAdapter() {

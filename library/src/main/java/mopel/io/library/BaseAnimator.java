@@ -53,6 +53,8 @@ public abstract class BaseAnimator {
     ViewCompat.setRotation(target,1);
     ViewCompat.setRotationX(target,1);
     ViewCompat.setRotationY(target,1);
+    //ViewCompat.setPivotX(target,target.getWidth()/2);
+    //ViewCompat.setPivotY(target,target.getHeight()/2);
   }
 
   public void cancel() {
@@ -65,12 +67,6 @@ public abstract class BaseAnimator {
 
   public boolean isStarted() {
     return animatorSet.isStarted();
-  }
-
-
-  public BaseAnimator setDuration(long duration) {
-    this.duration = duration;
-    return this;
   }
 
   public BaseAnimator setStartDelay(long delay){
@@ -88,7 +84,6 @@ public abstract class BaseAnimator {
     return this;
   }
 
-
   public void removeAnimatorListener(Animator.AnimatorListener l) {
     animatorSet.removeListener(l);
   }
@@ -97,11 +92,14 @@ public abstract class BaseAnimator {
     animatorSet.removeAllListeners();
   }
 
-
   public long getDuration() {
     return duration;
   }
 
+  public BaseAnimator setDuration(long duration) {
+    this.duration = duration;
+    return this;
+  }
 
   public AnimatorSet getAnimator() {
     return animatorSet;
