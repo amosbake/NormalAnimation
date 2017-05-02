@@ -1,4 +1,4 @@
-package mopel.io.library.rotate;
+package mopel.io.library.rotate.in;
 
 import android.animation.ObjectAnimator;
 import android.view.View;

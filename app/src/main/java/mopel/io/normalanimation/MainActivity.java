@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import mopel.io.library.BaseAnimator;
-import mopel.io.library.rotate.RotateInUpRightAnimator;
+import mopel.io.library.rotate.in.RotateInUpRightAnimator;
 
 public class MainActivity extends AppCompatActivity {
   private ImageView target;
