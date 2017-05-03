@@ -1,4 +1,4 @@
-package mopel.io.library.bounce;
+package mopel.io.library.bounce.in;
 
 import android.animation.Keyframe;
 import android.animation.PropertyValuesHolder;

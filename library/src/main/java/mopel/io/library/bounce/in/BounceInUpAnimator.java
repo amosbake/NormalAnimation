@@ -1,4 +1,4 @@
-package mopel.io.library.bounce;
+package mopel.io.library.bounce.in;
 
 import android.animation.Keyframe;
 import android.animation.PropertyValuesHolder;
@@ -11,18 +11,18 @@ import mopel.io.library.CubicBezierInterpolator;
 /**
  * Author: mopel
  * Date : 2017/5/3
- * https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInDown.css
+ * https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInUp.css
  */
 
-public class BounceInDownAnimator extends BaseAnimator {
+public class BounceInUpAnimator extends BaseAnimator {
   private Interpolator interpolator = new CubicBezierInterpolator(0.215, 0.610, 0.355, 1.000);
 
   @Override protected void prepare(final View target) {
-    Keyframe kf_scale_1 = Keyframe.ofFloat(0, -3000);
+    Keyframe kf_scale_1 = Keyframe.ofFloat(0, 3000);
     kf_scale_1.setInterpolator(interpolator);
-    Keyframe kf_scale_2 = Keyframe.ofFloat(.6f, 25);
+    Keyframe kf_scale_2 = Keyframe.ofFloat(.6f, -20);
     kf_scale_2.setInterpolator(interpolator);
-    Keyframe kf_scale_3 = Keyframe.ofFloat(.75f, -10);
+    Keyframe kf_scale_3 = Keyframe.ofFloat(.75f, 10);
     kf_scale_3.setInterpolator(interpolator);
     Keyframe kf_scale_4 = Keyframe.ofFloat(.9f, 5);
     kf_scale_4.setInterpolator(interpolator);

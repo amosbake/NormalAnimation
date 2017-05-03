@@ -1,4 +1,4 @@
-package mopel.io.library.bounce;
+package mopel.io.library.bounce.in;
 
 import android.animation.Keyframe;
 import android.animation.PropertyValuesHolder;
@@ -11,10 +11,10 @@ import mopel.io.library.CubicBezierInterpolator;
 /**
  * Author: mopel
  * Date : 2017/5/3
- * https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInLeft.css
+ * https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInDown.css
  */
 
-public class BounceInLeftAnimator extends BaseAnimator {
+public class BounceInDownAnimator extends BaseAnimator {
   private Interpolator interpolator = new CubicBezierInterpolator(0.215, 0.610, 0.355, 1.000);
 
   @Override protected void prepare(final View target) {
@@ -42,7 +42,7 @@ public class BounceInLeftAnimator extends BaseAnimator {
     ValueAnimator valueAnimator = ValueAnimator.ofPropertyValuesHolder(scaleHolder, alphaHolder);
     valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
       @Override public void onAnimationUpdate(ValueAnimator animation) {
-        target.setTranslationX((Float) animation.getAnimatedValue("translation"));
+        target.setTranslationY((Float) animation.getAnimatedValue("translation"));
         target.setAlpha((Float) animation.getAnimatedValue("alpha"));
       }
     });
