@@ -9,6 +9,7 @@ import mopel.io.library.BaseAnimator;
 /**
  * Author: mopel
  * Date : 2017/4/23
+ * cssAnimaton: https://github.com/daneden/animate.css/blob/master/source/attention_seekers/flash.css
  */
 
 public class FlashAnimator extends BaseAnimator {

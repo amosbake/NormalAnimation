@@ -11,7 +11,7 @@ import mopel.io.library.CubicBezierInterpolator;
 /**
  * Author: mopel
  * Date : 2017/4/23
- * cssAnimation: link https://github.com/daneden/animate.css/blob/master/source/attention_seekers/shake.css
+ * cssAnimation: link https://github.com/daneden/animate.css/blob/master/source/attention_seekers/bounce.css
  */
 
 public class BounceAnimator extends BaseAnimator {

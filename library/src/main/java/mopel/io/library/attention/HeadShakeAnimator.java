@@ -3,6 +3,7 @@ package mopel.io.library.attention;
 import android.animation.Keyframe;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
+import android.graphics.Path;
 import android.view.View;
 import mopel.io.library.BaseAnimator;
 
@@ -43,7 +44,6 @@ public class HeadShakeAnimator extends BaseAnimator {
     rotateFrames[10] = Keyframe.ofFloat(1f, 0f);
 
     PropertyValuesHolder rotate = PropertyValuesHolder.ofKeyframe("rotate", rotateFrames);
-
     ValueAnimator animator = ValueAnimator.ofPropertyValuesHolder(holderX, rotate);
     animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
       @Override public void onAnimationUpdate(ValueAnimator animation) {

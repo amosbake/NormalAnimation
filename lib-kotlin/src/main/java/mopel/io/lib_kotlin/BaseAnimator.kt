@@ -12,6 +12,9 @@ import android.view.animation.Interpolator
  */
 
 abstract class BaseAnimator {
+    companion object {
+        private val DEFAULT_DURATION: Long = 1000
+    }
 
     var animator: AnimatorSet = AnimatorSet()
         private set
@@ -25,7 +28,6 @@ abstract class BaseAnimator {
 
     fun restart() {
         animator = animator.clone()
-
     }
 
     fun start() {
@@ -93,7 +95,4 @@ abstract class BaseAnimator {
         return this
     }
 
-    companion object {
-        private val DEFAULT_DURATION: Long = 1000
-    }
 }

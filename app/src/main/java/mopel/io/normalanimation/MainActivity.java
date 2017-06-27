@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         this.animator.start();
       }
     });
+
     target.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         animator.setTarget(target);
